@@ -5,9 +5,9 @@ Release:	%mkrel 10
 Source0:	ftp://ftp.cistron.nl/pub/people/miquels/radius/%{name}-%{version}.tar.bz2
 Source1:	radiusd.pam.bz2
 Source2:	radiusd.init.bz2
-Patch0:		%{name}-1.6.6-pam.patch.bz2
-Patch1:		%{name}-1.6.6-prefix.patch.bz2
-Patch2:		%{name}-1.6.6-nas-sec.patch.bz2
+Patch0:		%{name}-1.6.6-pam.patch
+Patch1:		%{name}-1.6.6-prefix.patch
+Patch2:		%{name}-1.6.6-nas-sec.patch
 Patch3:         radiusd-1.6.6-build.patch
 URL:		http://www.miquels.cistron.nl/radius/
 License:	GPL
