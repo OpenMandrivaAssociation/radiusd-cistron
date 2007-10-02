@@ -12,7 +12,8 @@ Patch3:         radiusd-1.6.6-build.patch
 URL:		http://www.miquels.cistron.nl/radius/
 License:	GPL
 Group:		System/Servers
-PreReq:		rpm-helper
+Requires(post):	rpm-helper
+Requires(preun): rpm-helper
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:  pam-devel
 BuildRequires:  glibc-static-devel
