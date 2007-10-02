@@ -1,13 +1,14 @@
 Summary:	Cistron RADIUS daemon (with PAM) 
 Name:		radiusd-cistron
 Version:	1.6.6
-Release:	9mdk
+Release:	%mkrel 10
 Source0:	ftp://ftp.cistron.nl/pub/people/miquels/radius/%{name}-%{version}.tar.bz2
 Source1:	radiusd.pam.bz2
 Source2:	radiusd.init.bz2
-Patch0:		%{name}-%{version}-pam.patch.bz2
-Patch1:		%{name}-%{version}-prefix.patch.bz2
-Patch2:		%{name}-%{version}-nas-sec.patch.bz2
+Patch0:		%{name}-1.6.6-pam.patch.bz2
+Patch1:		%{name}-1.6.6-prefix.patch.bz2
+Patch2:		%{name}-1.6.6-nas-sec.patch.bz2
+Patch3:         radiusd-1.6.6-build.patch
 URL:		http://www.miquels.cistron.nl/radius/
 License:	GPL
 Group:		System/Servers
@@ -36,6 +37,7 @@ RADIUS server with a lot of functions. Short overview:
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 # clean up possible cvs junk.
 for i in `find . -type d -name CVS` `find . -type f -name .cvs\*` `find . -type f -name .#\*`; do
