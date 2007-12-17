@@ -14,7 +14,6 @@ License:	GPL
 Group:		System/Servers
 Requires(post):	rpm-helper
 Requires(preun): rpm-helper
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:  pam-devel
 BuildRequires:  glibc-static-devel
 
