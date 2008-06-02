@@ -58,7 +58,7 @@ cd ..
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
-mkdir -p %{buildroot}/{%{_sysconfdir}/{,raddb,logrotate.d,pam.d,rc.d/{init.d,rc{0,1,2,3,4,5,6}.d}},%{_bindir},%{_sbindir},%{_mandir}/{,man{1,5,8}},%{_localstatedir}/{,log/{,radacct}}}
+mkdir -p %{buildroot}/{%{_sysconfdir}/{,raddb,logrotate.d,pam.d,rc.d/{init.d,rc{0,1,2,3,4,5,6}.d}},%{_bindir},%{_sbindir},%{_mandir}/{,man{1,5,8}},%{_localstatedir}/lib/{,log/{,radacct}}}
 
 # make install
 cd src
