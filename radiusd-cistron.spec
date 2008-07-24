@@ -1,7 +1,7 @@
 Summary:	Cistron RADIUS daemon (with PAM) 
 Name:		radiusd-cistron
 Version:	1.6.6
-Release:	%mkrel 10
+Release:	%mkrel 12
 Source0:	ftp://ftp.cistron.nl/pub/people/miquels/radius/%{name}-%{version}.tar.bz2
 Source1:	radiusd.pam.bz2
 Source2:	radiusd.init.bz2
