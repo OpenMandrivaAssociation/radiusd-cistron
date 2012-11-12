@@ -1,0 +1,10 @@
+--- radiusd-cistron-1.6.8/src/radiusd.h~	2003-12-08 14:12:22.000000000 -0200
++++ radiusd-cistron-1.6.8/src/radiusd.h	2007-10-02 16:35:41.000000000 -0300
+@@ -204,7 +204,6 @@
+ extern char		*radwtmp_path;
+ extern UINT4		expiration_seconds;
+ extern UINT4		warning_seconds;
+-extern int		radius_pid;
+ extern int		use_dbm;
+ extern int		use_dns;
+ extern int		use_wtmp;

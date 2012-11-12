@@ -1,0 +1,21 @@
+--- src/Make.inc	2008-09-07 14:03:30.000000000 +0200
++++ src/Make.inc.oden	2008-09-07 14:05:45.000000000 +0200
+@@ -119,12 +119,12 @@
+ 	$(DINSTALL) $(SBINDIR)
+ 	$(DINSTALL) $(BINDIR)
+ 	$(DINSTALL) $(RADIUS_DIR)
+-	$(INSTALL) -m 755 -s radiusd  $(SBINDIR)/radiusd
+-	$(INSTALL) -m 755 -s radrelay $(SBINDIR)/radrelay
+-	$(INSTALL) -m 755 -s radwho  $(BINDIR)
+-	$(INSTALL) -m 755 -s radzap  $(BINDIR)
+-	$(INSTALL) -m 755 -s radclient $(BINDIR)
+-	test -z "$(DBM)" || $(INSTALL) -m 755 -s builddbm $(BINDIR)
++	$(INSTALL) -m 755 radiusd  $(SBINDIR)/radiusd
++	$(INSTALL) -m 755 radrelay $(SBINDIR)/radrelay
++	$(INSTALL) -m 755 radwho  $(BINDIR)
++	$(INSTALL) -m 755 radzap  $(BINDIR)
++	$(INSTALL) -m 755 radclient $(BINDIR)
++	test -z "$(DBM)" || $(INSTALL) -m 755 builddbm $(BINDIR)
+ 	$(INSTALL) -m 755    checkrad.pl $(SBINDIR)/checkrad
+ 	$(INSTALL) -m 755    radlast $(BINDIR)
+ 	$(INSTALL) -m 755    radtest $(BINDIR)
