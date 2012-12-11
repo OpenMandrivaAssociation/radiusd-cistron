@@ -1,4 +1,4 @@
 sources:
-  "radiusd-cistron-1.6.8.tar.gz:"	7938d5acbb994174baf662a4b4641367c4e1fd95
-  "radiusd.init.bz2:"	4487ee5e407e744aa5ca388fa7053f422f50dcf5
-  "radiusd.pam.bz2:"	03a4667ed253972479e38f536c227a9c3434b542
+  "radiusd-cistron-1.6.8.tar.gz": 7938d5acbb994174baf662a4b4641367c4e1fd95
+  "radiusd.init.bz2": 4487ee5e407e744aa5ca388fa7053f422f50dcf5
+  "radiusd.pam.bz2": 03a4667ed253972479e38f536c227a9c3434b542

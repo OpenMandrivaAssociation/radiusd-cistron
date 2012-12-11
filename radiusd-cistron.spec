@@ -1,7 +1,7 @@
 Summary:	Cistron RADIUS daemon (with PAM) 
 Name:		radiusd-cistron
 Version:	1.6.8
-Release:	%mkrel 2
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
 URL:		http://www.radius.cistron.nl/
@@ -144,3 +144,130 @@ rm -rf %{buildroot}
 %dir /var/log/radacct
 %dir %{_datadir}/radius
 %{_datadir}/radius/dictionary*
+
+
+%changelog
+* Sun Sep 07 2008 Oden Eriksson <oeriksson@mandriva.com> 1.6.8-1mdv2009.0
++ Revision: 282149
+- 1.6.8
+- drop P2, it's in there
+- don't strip at install (P4)
+
+* Fri Aug 01 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.6.6-13mdv2009.0
++ Revision: 260011
+- rebuild
+
+* Fri Jul 25 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.6.6-12mdv2009.0
++ Revision: 247814
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - adapt to %%_localstatedir now being /var instead of /var/lib (#22312)
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 1.6.6-10mdv2008.1
++ Revision: 140743
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Emmanuel Andry <eandry@mandriva.org>
+    - uncompress patches
+
+* Tue Oct 02 2007 Andreas Hasenack <andreas@mandriva.com> 1.6.6-10mdv2008.0
++ Revision: 94819
+- fix rpm-helper requires
+- fix pam config file (#31654)
+- fix build
+- import radiusd-cistron
+
+
+
+* Wed Nov 12 2003 Michael Scherer <scherer.michael@free.fr> 1.6.6-9mdk 
+- BuildRequires ( glibc-static-devel )
+
+* Thu Jul 10 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.6.6-8mdk
+- rebuild
+
+* Sun Jun 29 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.6.6-7mdk
+- added P2 which addresses CAN-2003-0450
+
+* Fri Apr 25 2003 Frederic Lepied <flepied@mandrakesoft.com> 1.6.6-6mdk
+- added BuildRequires
+
+* Thu Jan 23 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.6.6-5mdk
+- package should not own /var/log
+- fix no-prereq-on rpm-helper
+- bzip S1 & S2
+- misc spec file fixes
+
+* Mon Jan 20 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.6.6-4mdk
+- build release
+- misc spec file fixes
+
+* Mon May 27 2002 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.6.6-3mdk
+- radclient was missing (duh!) reported by Marcin Klimowski
+
+* Mon May 20 2002 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.6.6-2mdk
+- rebuilt with gcc3.1
+
+* Sat May 4 2002 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.6.6-1mdk
+- new version
+- rediff P0
+- remove P1
+- misc spec file fixes
+- added S2
+- added new P1
+
+* Fri Aug 31 2001 Lenny Cartier <lenny@mandrakesoft.com> 1.6.4-3mdk
+- rebuild
+
+* Tue Apr 24 2001 Frederic Lepied <flepied@mandrakesoft.com> 1.6.4-2mdk
+- recompiled for pam 0.74
+
+* Sat Dec 16 2000 Frederic Lepied <flepied@mandrakesoft.com> 1.6.4-1mdk
+- first release
+
+* Thu Sep 14 2000 Rodrigo Barbosa <rodrigob@conectiva.com>
+- Only use gcc-stackguard if avaliable. Andreas: added CPP
+  for stackguard
+- Adopted rpm macros
+- Removed referenced to gzipman
+
+* Wed May 17 2000 Elvis Pfützenreuter <epx@conectiva.com>
+- using stackguard compiler
+- allows non-root compilation
+- /usr/s?bin files put explicit in %%files, %%defattr included
+
+* Tue Dec 14 1999 Guilherme Wunsch Manika <gwm@conectiva.com>
+- Included es init script translation
+
+* Mon Nov 29 1999 Rudá Moura <ruda@conectiva.com>
+- Updated to version 1.6.1
+- Compressed man pages
+- Corrected (I hope) a bug in radiusd-init
+
+* Thu Jul 01 1999 Rodrigo Parra Novo <rodarvus@conectiva.com>
+- Fixed radiusd.init (me/cavassin)
+- Fixed radwatch.sh (cavassin)
+
+* Sun Jun 20 1999 Conectiva <dist@conectiva.com>
+- Recompiled with glibc 2.1.x, egcs 1.1.x, rpm 3.0.x and kernel 2.2.x
+
+* Sun Jun 20 1999 Arnaldo Carvalho de Melo <acme@conectiva.com>
+- sources recompressed
+
+* Sat Nov 21 1998 Tim Hockin <thockin@ais.net>
+- Based on work by Christopher McCrory <chrismcc@netus.com>
+- Build with PAM
+- Included pam.d/radius
+- Fixed some small errors in this spec
+- Changed to build to BuildRoot
+- Changed Release to "beta11" from "1"
+- Included users, naslist, huntgroups, clients files, not just -dist
+
+* Tue Oct 27 1998 Mauricio Mello de Andrade <mandrade@mma.com.br>
+- Corrected the script to Start/Stop the Radius under RH5.x
+- Included the script to Rotate Radius Logs under RedHat
+- Checkrad Utility now works fine with Cyclades PathRas
+
