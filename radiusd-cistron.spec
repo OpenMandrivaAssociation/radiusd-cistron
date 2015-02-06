@@ -1,7 +1,7 @@
 Summary:	Cistron RADIUS daemon (with PAM) 
 Name:		radiusd-cistron
 Version:	1.6.8
-Release:	%mkrel 1
+Release:	2
 License:	GPL
 Group:		System/Servers
 URL:		http://www.radius.cistron.nl/
