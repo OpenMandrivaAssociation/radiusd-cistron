@@ -4,7 +4,7 @@ Version:	1.6.8
 Release:	2
 License:	GPL
 Group:		System/Servers
-URL:		http://www.radius.cistron.nl/
+URL:		https://www.radius.cistron.nl/
 Source0:	ftp://ftp.radius.cistron.nl/pub/radius/%{name}-%{version}.tar.gz
 Source1:	radiusd.pam.bz2
 Source2:	radiusd.init.bz2
